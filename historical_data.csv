@@ -1,0 +1,6 @@
+settlement_date,settlement_period,england_wales_demand,ifa_flow,nsl_flow
+2024-01-01,1,25000,100,50
+2024-01-01,2,24900,105,55
+2024-01-01,3,24800,110,60
+... (add enough data for at least 24 hours for lags to work)
+2024-01-02,1,26000,120,65

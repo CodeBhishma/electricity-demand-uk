@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: electricity-demand-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: MODEL_PATH
+        value: forecast.json
+      - key: HISTORICAL_DATA_PATH
+        value: historical_data.csv
+      - key: SECRET_KEY
+        value: your-secret-key
